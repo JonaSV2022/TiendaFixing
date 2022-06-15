@@ -37,5 +37,4 @@ const CardComponentPro = (props) =>{
             fontSize:17,
             fontWeight:'bold',
         }
-
       });

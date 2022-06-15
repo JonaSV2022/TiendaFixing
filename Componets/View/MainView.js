@@ -1,15 +1,15 @@
-
 import { StyleSheet, Text, View, Button } from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import {ProveedorView} from "../View/ProveedorView"
-
+import { CompraView } from './CompraView';
 
 const Tab = createBottomTabNavigator ();
 const MainView =( Props) =>{
   return (
 
  <Tab.Navigator> 
-  <Tab.Screen name = "Proveedor" component = {ProveedorView} />
+  <Tab.Screen name = "Proveedor" component = {ProveedorView}/>
+  <Tab.Screen name = "Compra" component = {CompraView} />
 </Tab.Navigator>
   );
 

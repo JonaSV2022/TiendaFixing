@@ -1,8 +1,7 @@
-
-class TblcompraProductos extends Entity{
+class TblcompraProductos{
     constructor (props)
         {
-            super();
+            //super();
             for (const prop in props) {
             this[prop] = props[prop];
             }
@@ -11,16 +10,16 @@ class TblcompraProductos extends Entity{
             Get:"TblcompraProductos",
         }
 
-        idCompraProducto ="1";
-        idProveedor ="1";
-        cantidadProducto = "18";
-        nombreProducto = "Auriculares Celebrat";
-        NoFactura = "12"
-        FechaCompra = "25/09/2022";
-        iva="2";
-        total= "1620";
-        Subtotal = "1620";
-        estado= "1";
+        idCompraProducto ="";
+        idProveedor ="";
+        cantidadProducto = "";
+        nombreProducto = "";
+        NoFactura = ""
+        FechaCompra = "";
+        iva="";
+        total= "";
+        Subtotal = "";
+        estado= "";
 
         
      Get = async (param)=>{
@@ -30,6 +29,5 @@ class TblcompraProductos extends Entity{
          return compraFilt.map(c => (new TblcompraProductos(c)));
      }
        
-
 }
 export {TblcompraProductos}
