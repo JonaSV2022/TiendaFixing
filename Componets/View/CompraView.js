@@ -25,11 +25,6 @@ CargarCompra= async (param= "") =>{
 render (){
     return(<ScrollView>
       
-        <Text style={{
-		  fontSize: 26, fontWeight:600}}>Sección de Compras</Text>
-             <TextInput style={{ padding: 10, margin: 10 }}
-					placeholder="Buscar nombre"
-					onChangeText={(val) => this.CargarCompra(val)} ></TextInput>
  
               {this.state.isLoading ?
               <ActivityIndicator/>:
