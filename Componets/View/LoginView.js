@@ -1,17 +1,18 @@
+import reactDom from 'react-dom';
 import { StyleSheet, Text, View ,Button, TextInput} from 'react-native';
 
 
 const LoginView = (props) =>{
     return (
         <View style={styles.Conteiner}>     
-        <Text style={styles.Title}>TIENDA FIXING </Text>
-         <View style={styles.OptionConteiner}>
+        <Text style={styles.Title}>TIENDA FIXING</Text>
+         <View style={styles.ContenedorDelBoton}>
          <TextInput style={styles.CajasDeTexto}
 					placeholder="Ingrese el usuario"></TextInput>
-         <Button title="Acceder" onPress={() => {
+            {/* Modificar estilo del botón de acceso */}
+        <Button title="Acceder" color={"#8a5353"} onPress={() => {
              props.navigation.navigate('MainView');
           }}/>  
-          
              </View> 
         </View>);
 
@@ -23,15 +24,18 @@ const LoginView = (props) =>{
           flex:1,
           backgroundColor: "#f2f2f2",
           padding:20,
+
         },Title:{
             color:"#000",
-            fontSize: 70,
-            flex:1,
+            marginTop: 300,
+            fontSize: 55,
             justifyContent:'center',
-            marginLeft:50
+            marginLeft:45,
+            fontWeight: "bold"
         },
-        OptionConteiner:{
-            flex: 3,
+        ContenedorDelBoton:{
+            top: 50,
+            flex: 21,
         },
         CajasDeTexto:{
             padding: 20, 
@@ -40,6 +44,7 @@ const LoginView = (props) =>{
             width:480,
             fontSize:15,
             borderWidth: 1.5,
-            borderColor: "#7D7D7D"
+            borderColor: "#7D7D7D",
+            marginBottom: 60
         }
       });
