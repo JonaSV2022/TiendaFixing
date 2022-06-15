@@ -1,0 +1,21 @@
+[
+{
+    "id":"1",
+    "descripcion":"TWS-V5 Celebrat",
+    "especificaciones":"Marca Celebrat-Modelo V5-Capacidad de la batería:60 mAh- Tiempo de carga: 2h Peso: 50.5G",
+    "idVentaProductos":"1"
+},
+{
+    "id":"2",
+    "descripcion":"A10",
+    "especificaciones":"RAM:2GB-PROCESADOR:EXYNOS7884-Sistema Operativo: Android 9",
+    "idVentaProductos":"2"
+},
+{
+    "id":"3",
+    "descripcion":"Moto g100",
+    "especificaciones":"RAM: 8 GB LPDDR5-Almacenamiento: 128 GB UFS 3.1- Sistema operativo: Android 11",
+    "idVentaProductos":"3"
+}
+
+]

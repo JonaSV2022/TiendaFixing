@@ -1,0 +1,21 @@
+[
+    {
+        "id": "1",
+        "total":"600",
+        "subtotal":"15",
+        "numeroFactura":"1",
+        "iva":"1.5",
+        "fechaVenta":"04-02-2021",
+        "cambio":"100"
+    },
+
+    {
+        "id": "2",
+        "total":"3600",
+        "subtotal":"15",
+        "numeroFactura":"2",
+        "iva":"1.5",
+        "fechaVenta":"02-05-2022",
+        "cambio":"400"
+    }
+]

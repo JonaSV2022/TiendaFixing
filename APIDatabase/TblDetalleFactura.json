@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "idFactura":"1",
+        "cantidadAcomprar":"2",
+        "descuento":"0",
+        "precioUnidad":"400",
+        "total":"600",
+        "descripcionGarantia":"No hay garantia"
+
+    },
+    {
+        "id": "2",
+        "idFactura":"2",
+        "cantidadAcomprar":"1",
+        "descuento":"10",
+        "precioUnidad":"3240",
+        "total":"3240",
+        "descripcionGarantia":"05-16-2022','Aplica garantia para los daños en el dispositivo"
+
+    }
+]

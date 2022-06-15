@@ -1,0 +1,44 @@
+[
+
+    {
+       "idCompraProducto":"1",
+       "idProveedor":"1",
+       "cantidadProducto":"18",
+       "nombreProducto":"Auriculares Celebrat",
+       "NoFactura":"12",
+       "FechaCompra":"25/09/2022",
+       "iva":"2",
+       "total":"1620",
+       "Subtotal":"1620",
+       "estado":"1"
+
+    },
+
+    {
+        "idCompraProducto":"2",
+        "idProveedor":"2",
+        "cantidadProducto":"8",
+        "nombreProducto":"Auriculares Celebrat",
+        "NoFactura":"18",
+        "FechaCompra":"12/06/2022",
+        "iva":"4",
+        "total":"720",
+        "Subtotal":"720",
+        "estadoCompra":"0"
+ 
+    },
+
+    {
+        "idCompraProducto":"3",
+       "idProveedor":"3",
+       "cantidadProducto":"20",
+       "nombreProducto":"Protector Glass",
+       "NoFactura":"6",
+       "FechaCompra":"05/03/2022",
+       "iva":"2",
+       "total":"1000",
+       "Subtotal":"1000",
+       "estadoCompra":"1"
+
+    }
+]

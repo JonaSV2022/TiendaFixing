@@ -1,0 +1,32 @@
+[
+    
+    {
+            "id": "1",
+            "nombreProducto": "Auriculares Celebrate",
+            "precioVenta": "400",
+            "existenciaProducto":"25",
+            "idMarca": "4",
+            "descripcion": "accesorio para el celular"
+
+    },
+    
+    {
+            "id": "2",
+            "nombreProducto": "Galaxy A10",
+            "precioVenta": "1500",
+            "existenciaProducto":"40",
+            "idMarca": "2",
+            "descripcion": "Dispositivo móvil"
+
+    },
+    
+    {
+            "id": "3",
+            "nombreProducto": "MotoG100",
+            "precioVenta": "3600",
+            "existenciaProducto":"2",
+            "idMarca": "1",
+            "descripcion": "Dispositivo móvil inteligente"
+
+    }
+    ]

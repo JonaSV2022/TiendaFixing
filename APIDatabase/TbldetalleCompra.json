@@ -1,0 +1,21 @@
+
+[
+   {
+   "idDetalleCompra": "1",
+   "idCompraProducto": "1",
+   "idProducto": "1"
+   },
+
+   {
+   "idDetalleCompra": "2",
+   "idCompraProducto": "2",
+   "idProducto": "2"
+   },
+
+   {
+   "idDetalleCompra": "3",
+   "idcompraProducto": "3",
+   "idProducto": "3"
+   }
+
+]

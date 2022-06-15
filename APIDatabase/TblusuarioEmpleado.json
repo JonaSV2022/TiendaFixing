@@ -1,0 +1,30 @@
+[
+    
+    {
+            "idusuarioEmpleado ": "1",
+            "nombre": "Carlos",
+            "apellido" : "Matuz",
+            "contraseña":"1234",
+            "cedula":"048-230789-1234M",
+            "estado":"1"
+    },
+    
+    {
+        "idUsuarioEmpleado ": "2",
+            "nombre": "Camilo",
+            "apellido" : "Martinez",
+            "contraseña":"12345",
+            "cedula":"042-260799-1794T",
+            "estado":"1"
+    },
+
+    {
+    "idusuarioEmpleado ": "3",
+    "nombre": "Aaul",
+    "apellido" : "Gutierrez",
+    "contraseña":"125",
+    "cedula":"032-120379-1984J",
+    "estado":"0"
+    }
+
+]

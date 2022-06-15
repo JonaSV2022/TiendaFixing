@@ -1,0 +1,37 @@
+[
+{
+    "idProveedor":"1",
+    "nombreProveedor":"Alejandro",
+    "apellidoProveedor":"Castillo",
+    "RUC":"001160597006V-3-J041000023095-9",
+    "telefono":"56788976",
+    "nombreDeLaEmpresa":"MundoMovil",
+    "cedula":"408-120397-2345N",
+    "direccion": "Monseñor Lescano,1 cuadra al lago,1 cuadra abajo,media cuadra al lago"
+    
+},
+
+{
+    "idProveedor":"2",
+    "nombreProveedor":"Roxana",
+    "apellidoProveedor":"Vega",
+    "RUC":"J041000023095-9",
+    "telefono":"8895676",
+    "nombreDeLaEmpresa":"TelMovil Plaza España",
+    "cedula":"807-090597-4567M",
+    "direccion": "Rotonda el Gueguense 300 metros al sur,mano derecha"
+},
+
+{
+    "idProveedor":"3",
+    "nombreProveedor":"Roberto",
+    "apellidoProveedor":"Carballo",
+    "RUC":"095672782341G-0",
+    "telefono":"78569043",
+    "nombreDeLaEmpresa":"Celulandia Nicaragua",
+    "cedula":"045-232320-2589M",
+    "direccion": "Igl.San Miguel, 1 cuadra y media al este 41000"
+}
+
+
+]
