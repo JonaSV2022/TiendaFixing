@@ -14,7 +14,9 @@ const CardCompra = (props) =>{
          <Text style ={style.Atribute}> IVA : {props.data.iva}</Text>
          <Text style ={style.Atribute}> Total: {props.data.total}</Text>
          <Text style ={style.Atribute}> Sub Total: {props.data.Subtotal}</Text>   
-         <Text style ={style.Atribute}> Estado: {props.data.estado}</Text>       
+         <Text style ={style.Atribute}> Estado: {props.data.estado}</Text>   
+
+        
         </View>); 
 
     }

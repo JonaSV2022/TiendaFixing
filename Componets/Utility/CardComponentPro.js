@@ -12,7 +12,10 @@ const CardComponentPro = (props) =>{
          <Text style ={style.Atribute}> Nombre de la empresa: {props.data.nombreDeLaEmpresa}</Text>
          <Text style ={style.Atribute}> Teléfono: {props.data.telefono}</Text>
          <Text style ={style.Atribute}> Cédula: {props.data.cedula}</Text>
-         <Text style ={style.Atribute}> Dirección: {props.data.cedula}</Text>        
+         <Text style ={style.Atribute}> Dirección: {props.data.cedula}</Text>   
+
+        
+
         </View>); 
 
     }

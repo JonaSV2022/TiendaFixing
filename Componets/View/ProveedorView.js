@@ -24,12 +24,17 @@ CargarProveedor= async (param= "") =>{
 
 render (){
     return(<ScrollView>
-      
+
         <Text style={{
 		  fontSize: 26, fontWeight:600}}>Sección de Proveedores</Text>
              <TextInput style={{ padding: 10, margin: 10 }}
 					placeholder="Buscar nombre de proveedor"
 					onChangeText={(val) => this.CargarProveedor(val)} ></TextInput>
+                       
+                    {/* //Posicion del Boton para mandar añadir Datos// */}
+                     <Button title="AÑADIR" color={"#14A839"} onPress={() => {
+                      props.navigation.navigate('MainView');
+                      }}/> 
  
               {this.state.isLoading ?
               <ActivityIndicator/>:
@@ -37,6 +42,8 @@ render (){
               <CardComponentPro data={provee}/>
               
               )}
+
+     
         </ScrollView>)
 }
 
