@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View,Button, TextInput ,ScrollView} from 'react-native';
+import { StyleSheet, Text, View, Button, TextInput ,ScrollView} from 'react-native';
 import { TblProveedor } from '../../Model/TblProveedor';
 class FrmProveedor extends React.Component {
 	constructor(props) {
@@ -9,7 +9,7 @@ class FrmProveedor extends React.Component {
         //Mi variable para cargar es Problock = Bloque
 	}
 	render() {
-		return <View style={{padding:10 }}>
+		return <ScrollView style={{padding:10 }}>
 				<Text style={styles.Title}>Nuevo Proveedor</Text>
                 {/* FORMULARIO */}
 
@@ -34,8 +34,9 @@ class FrmProveedor extends React.Component {
                 await this.props.route.params.GuardarProveedor(this.Problock);
 				}}/>     
                 <Button title="Cancelar" onPress={()=>{
+					 this.props.navigation.navigate("ProveedorView");
 				}}/>             
-			</View>;
+			</ScrollView>;
 		
 	}
     

@@ -33,7 +33,7 @@ render (){
                        
                     {/* //Posicion del Boton para mandar añadir Datos// */}
                      <Button title="AÑADIR" color={"#14A839"} onPress={() => {
-                      props.navigation.navigate('MainView');
+                      this.props.navigation.navigate("FrmProveedor");
                       }}/> 
  
               {this.state.isLoading ?
