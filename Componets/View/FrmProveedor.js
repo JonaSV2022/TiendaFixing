@@ -9,25 +9,37 @@ class FrmProveedor extends React.Component {
         //Mi variable para cargar es Problock = Bloque
 	}
 	render() {
-		return <ScrollView style={{padding:10 }}>
-				<Text style={styles.Title}>Nuevo Proveedor</Text>
+		return <ScrollView style={{padding:10}}>
+				<Text style={styles.Title}>Datos del nuevo Proveedor</Text>
                 {/* FORMULARIO */}
 
                 <TextInput style={styles.InputStyle}
-					placeholder="Nombre Proveedor"
-					onChangeText={val =>  this.Problock.nombreProveedor = val} ></TextInput> 
+					placeholder="Nombre del Proveedor"
+					onChangeText={val =>  this.Problock.nombreProveedor = val} ></TextInput>
+
+				<TextInput style={styles.InputStyle}
+					placeholder="Apellido del Proveedor"
+					onChangeText={val =>  this.Problock.apellidoProveedor = val} ></TextInput>  
                  
                 <TextInput style={styles.InputStyle}
-					placeholder="Ruc"
+					placeholder="RUC"
 					onChangeText={val =>  this.Problock.RUC = val} ></TextInput>  
 
+				<TextInput style={styles.InputStyle}
+					placeholder="Télefono de contacto"
+					onChangeText={val =>  this.Problock.telefono = val} ></TextInput>  
+
                 <TextInput style={styles.InputStyle}
-					placeholder="Nombre De La Empresa"
+					placeholder="Nombre de la empresa"
 					onChangeText={val =>  this.Problock.nombreDeLaEmpresa = val} ></TextInput>  
 
                 <TextInput style={styles.InputStyle}
-					placeholder="Cedula"
-					onChangeText={val =>  this.Problock.cedula = val} ></TextInput>  
+					placeholder="Cédula"
+					onChangeText={val =>  this.Problock.cedula = val} ></TextInput> 
+
+				<TextInput style={styles.InputStyle}
+					placeholder="Dirección"
+					onChangeText={val =>  this.Problock.direccion = val} ></TextInput>   
 
                 {/* Opciones */}
                 <Button title="Guardar" onPress={ async ()=>{
@@ -36,10 +48,8 @@ class FrmProveedor extends React.Component {
                 <Button title="Cancelar" onPress={()=>{
 					 this.props.navigation.navigate("ProveedorView");
 				}}/>             
-			</ScrollView>;
-		
-	}
-    
+			</ScrollView>	
+	}    
 }
 export {FrmProveedor};
 

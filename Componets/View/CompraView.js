@@ -24,13 +24,10 @@ CargarCompra= async (param= "") =>{
 
 render (){
     return(<ScrollView>
-
            {/* //Posicion del Boton para mandar añadir Datos// */}
-           <Button title="AÑADIR" color={"#F2BF27"} onPress={() => {
-             props.navigation.navigate('MainView');
+           <Button title="Añadir nueva Compra" color={"#F2BF27"} onPress={() => {
+              this.props.navigation.navigate("FrmCompra");
           }}/> 
- 
- 
               {this.state.isLoading ?
               <ActivityIndicator/>:
               this.state.Dataset.map(vCompra=>

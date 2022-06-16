@@ -32,18 +32,15 @@ render (){
 					onChangeText={(val) => this.CargarProveedor(val)} ></TextInput>
                        
                     {/* //Posicion del Boton para mandar añadir Datos// */}
-                     <Button title="AÑADIR" color={"#14A839"} onPress={() => {
+                     <Button title="Añadir nuevo Proveedor" color={"#14A839"} onPress={() => {
                       this.props.navigation.navigate("FrmProveedor");
                       }}/> 
  
               {this.state.isLoading ?
               <ActivityIndicator/>:
               this.state.Dataset.map(provee =>
-              <CardComponentPro data={provee}/>
-              
-              )}
-
-     
+              <CardComponentPro data={provee}/>              
+              )}     
         </ScrollView>)
 }
 
