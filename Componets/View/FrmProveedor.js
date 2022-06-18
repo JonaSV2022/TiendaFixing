@@ -6,8 +6,19 @@ class FrmProveedor extends React.Component {
 		super();
 		this.props = props;
         this.Problock= new TblProveedor();
+		this.state = {
+			Bloques: []
+		}
         //Mi variable para cargar es Problock = Bloque
+		this.CargarProveedor = this.props.route.params.CargarProveedor;
 	}
+
+
+	GuardarProveedor = async()=>{
+		await this.Problock.Save("IdProveedor");
+		this.CargarProveedor();
+	}
+
 	render() {
 		return <ScrollView style={{padding:10}}>
 				<Text style={styles.Title}>Datos del nuevo Proveedor</Text>
@@ -43,7 +54,9 @@ class FrmProveedor extends React.Component {
 
                 {/* Opciones */}
                 <Button title="Guardar" onPress={ async ()=>{
-                await this.props.route.params.GuardarProveedor(this.Problock);
+                //await this.props.route.params.GuardarProveedor(this.Problock);
+				await this.GuardarProveedor();
+				this.props.navigation.navigate("ProveedorView");
 				}}/>     
                 <Button title="Cancelar" onPress={()=>{
 					 this.props.navigation.navigate("ProveedorView");

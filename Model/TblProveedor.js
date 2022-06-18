@@ -1,32 +1,37 @@
-class TblProveedor {
-    constructor (props)
+import { Entity } from "./Entity";
+class TblProveedor extends Entity{
+    constructor (pros =  {})
         {
-            //super();
-            for (const prop in props) {
-            this[prop] = props[prop];
+            super();
+            for (const prop in pros) {
+                this[prop] = pros[prop];
             }
         }
         ApiMethods = {
-            Get:"TblProveedor",
+             Get:"TblProveedor",
+         }
+    idProveedor = "";
+    nombreProveedor ="";
+    apellidoProveedor ="";
+    RUC= "";
+    telefono="";
+    nombreDeLaEmpresa ="";
+    cedula ="";
+    direccion = "";
+ TblProveedor = {
+     val: this,
+      get: async()=>{
+         if(this.idProveedor!=""){
+            const Bloques = new TblProveedor();
+            return await Bloques.GetByProps("idProveedor", this.idProveedor);
+         }else{
+             return this.TblProveedor.val
+         }
+           
+        },
+        set:(newValue)=>{
+            this.val = newValue;
         }
-    idProveedor = "1";
-    nombreProveedor ="Alejandro";
-    apellidoProveedor ="Castillo";
-    RUC= "001160597006V-3-J041000023095-9";
-    telefono="56788976";
-    nombreDeLaEmpresa ="MundoMovil";
-    cedula ="408-120397-2345N";
-    direccion = "Monseñor Lescano,1 cuadra al lago,1 cuadra abajo,media cuadra al lago";
-   
-
-     Get = async (param)=>{
-        const Prove = await import("../APIDatabase/TblProveedor.json");
-         const proveeFilt = Prove.default.filter(c => 
-             c.nombreProveedor.toUpperCase().includes(param.toUpperCase()))
-         return proveeFilt.map(c => (new TblProveedor(c)));
-     }
-
-       
-
+    }
 }
 export {TblProveedor}

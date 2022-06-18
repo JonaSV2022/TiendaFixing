@@ -1,6 +1,5 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { ApiDataBase } from "./ApiDatabase";
-
+import {ApiDataBase} from "../Model/ApiDatabase"
 class Entity{
 
     constructor(props){
@@ -82,6 +81,4 @@ class Entity{
     }
 
 }
-
-
 export {Entity}
