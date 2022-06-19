@@ -1,7 +1,9 @@
-class TblcompraProductos{
+import { Entity } from "./Entity";
+
+class TblcompraProductos extends Entity{
     constructor (props)
         {
-            //super();
+            super();
             for (const prop in props) {
             this[prop] = props[prop];
             }
@@ -21,13 +23,21 @@ class TblcompraProductos{
         Subtotal = "";
         estado= "";
 
-        
-     Get = async (param)=>{
-        const Compra = await import("../APIDatabase/TblcompraProductos.json");
-         const compraFilt = Compra.default.filter(c => 
-             c.nombreProducto.toUpperCase().includes(param.toUpperCase()))
-         return compraFilt.map(c => (new TblcompraProductos(c)));
-     }
+    TblcompraProductos = {
+        val: this,
+         get: async()=>{
+            if(this.idCompraProducto !=""){
+               const ComBloques = new TblcompraProductos();
+               return await ComBloques.GetByProps("idCompraProducto ", this.idCompraProducto );
+            }else{
+                return this.TblcompraProductos.val
+            }
+              
+           },
+           set:(newValue)=>{
+               this.val = newValue;
+           }
+       }
        
 }
 export {TblcompraProductos}

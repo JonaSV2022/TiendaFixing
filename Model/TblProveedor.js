@@ -18,6 +18,7 @@ class TblProveedor extends Entity{
     nombreDeLaEmpresa ="";
     cedula ="";
     direccion = "";
+    
  TblProveedor = {
      val: this,
       get: async()=>{

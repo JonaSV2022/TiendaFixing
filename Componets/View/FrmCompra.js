@@ -7,6 +7,15 @@ class FrmCompra extends React.Component {
 		this.props = props;
         this.CompraBlock= new TblcompraProductos();
         // Mi variable para cargar es: "CompraBlock"
+		this.state = {
+			ComBloques: []
+		}
+		this.CargarCompras = this.props.route.params.CargarCompras;
+	}
+
+	GuardarCompras = async()=>{
+		await this.CompraBlock.Save("IdCompraProducto");
+		this.CargarCompras();
 	}
 	render() {
 		return <ScrollView style={{padding:10 }}>
@@ -43,8 +52,9 @@ class FrmCompra extends React.Component {
                  
 
                 {/* Opciones */}
-                <Button title="Guardar" onPress={ async ()=>{               
-                    //Añadir Guardar aquí***** 
+				<Button title="Guardar" onPress={ async ()=>{
+				await this.GuardarCompras();
+				this.props.navigation.navigate("CompraView");
 				}}/>     
                 <Button title="Cancelar" onPress={()=>{
 					 this.props.navigation.navigate("CompraView");
