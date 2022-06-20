@@ -1,5 +1,5 @@
 import reactDom from 'react-dom';
-import { StyleSheet, Text, View ,Button, TextInput} from 'react-native';
+import { StyleSheet, Text, View ,Button,Image,TextInput} from 'react-native';
 
 
 const LoginView = (props) =>{
@@ -9,8 +9,9 @@ const LoginView = (props) =>{
          <View style={styles.ContenedorDelBoton}>
          <TextInput style={styles.CajasDeTexto}
 					placeholder="Ingrese su usuario"></TextInput>
+
             {/* Modificar estilo del botón de acceso */}
-        <Button title="Acceder" color={"#8a5353"} onPress={() => {
+        <Button title="Acceder" Class="Boton"color={"#8a5353"} onPress={() => {
              props.navigation.navigate('MainView');
           }}/>  
              </View> 
@@ -31,7 +32,11 @@ const LoginView = (props) =>{
             fontSize: 55,
             justifyContent:'center',
             marginLeft:45,
-            fontWeight: "bold"
+            fontWeight: "bold",
+            //zona del efecto de sombra
+            textShadowColor: '#034AA6',
+            textShadowOffset: { width: 2, height: 2 }, 
+            textShadowRadius:3     
         },
         ContenedorDelBoton:{
             top: 50,
