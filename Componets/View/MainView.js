@@ -4,8 +4,6 @@ import {ProveedorView} from "../View/ProveedorView"
 import { CompraView } from './CompraView';
 import {PrincipalView} from "../View/PrincipalView";
 
-
-
 const Tab = createBottomTabNavigator ();
 const MainView =( Props) =>{
   return (
@@ -16,8 +14,8 @@ const MainView =( Props) =>{
     El segundo, es los botones de abajos.
   */}
 
-  <Tab.Screen name = "Menú Principal (Proveedores)" component = {PrincipalView} />
-  {/* <Tab.Screen name = "Proveedor" component = {ProveedorView}/> */}
+  <Tab.Screen name = "Menú Principal" component = {PrincipalView} />
+  <Tab.Screen name = "Menú de Proveedores" component = {ProveedorView} />
   <Tab.Screen name = "Menú de Compra" component = {CompraView} />
 </Tab.Navigator>
   );

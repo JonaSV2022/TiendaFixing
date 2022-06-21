@@ -1,6 +1,4 @@
-import reactDom from 'react-dom';
-import { StyleSheet, Text, View ,Button,Image,TextInput} from 'react-native';
-
+import { StyleSheet, Text, View ,Button, TextInput} from 'react-native';
 
 const LoginView = (props) =>{
     return (
@@ -25,10 +23,9 @@ const LoginView = (props) =>{
           flex:1,
           backgroundColor: "#f2f2f2",
           padding:20,
-
         },Title:{
             color:"#000",
-            marginTop: 300,
+            marginTop: 250,
             fontSize: 55,
             justifyContent:'center',
             marginLeft:45,
@@ -46,7 +43,7 @@ const LoginView = (props) =>{
             padding: 20, 
             margin: 10, 
             marginLeft: 1,
-            width:480,
+            width:467,
             fontSize:15,
             borderWidth: 1.5,
             borderColor: "#7D7D7D",

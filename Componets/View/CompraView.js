@@ -32,7 +32,7 @@ render (){
 					onChangeText={(val) => this.CargarCompras(val)} ></TextInput>
 
            {/* //Posicion del Boton para mandar añadir Datos// */}
-           <Button title="Añadir Nueva Compra" color={"#F2BF27"} onPress={() => {
+           <Button title="Añadir Nueva Compra" color={"#45aaad"} onPress={() => {
                   	 this.props.navigation.navigate("FrmCompra",{
                         CargarCompras:this.CargarCompras});
                       }}/> 
