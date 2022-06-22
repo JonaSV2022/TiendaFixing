@@ -9,8 +9,10 @@ const MenuPrincipalView = (props) =>{
         <Text style={styles.BienvenidaTexto}>¡Bienvenido al menú principal!</Text>
        <Button title="Menú de proveedores" color={"#14a839"} onPress={()=>{
                 props.navigation.navigate('ProveedorView');}}/>  
+       <Text style ={styles.Espacio}></Text>
        <Button title="Menú de Compra" color={"#45aaad"}onPress={()=>{
                 props.navigation.navigate('CompraView');}}/> 
+        <Text style ={styles.Espacio}></Text>
        <Button title="Salir" color={"#8a5353"}onPress={()=>{
                 props.navigation.navigate('LoginView');}}/>   
         </View>
@@ -42,5 +44,7 @@ const MenuPrincipalView = (props) =>{
             justifyContent:'center',
             fontWeight: "bold",
             fontSize: 20,
+        },Espacio:{
+            marginTop: 45,
         }
       });
