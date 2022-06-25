@@ -14,3 +14,4 @@ class TblDetalleCompra{
         idProductos  = "1";
 }
 export {TblDetalleCompra}
+
