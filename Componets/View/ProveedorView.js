@@ -2,6 +2,7 @@ import { StyleSheet, Text, View ,Button,TextInput,ActivityIndicator, ScrollView}
 import React from 'react';
 import {TblProveedor} from '../../Model/TblProveedor'
 import {CardComponentPro} from '../Utility/CardComponentPro'
+import { CardDetalleCompra } from '../Utility/CardDetalleCompra';
 
 class ProveedorView extends React.Component{
 
@@ -19,6 +20,14 @@ CargarProveedor= async (param= "") =>{
     this.setState({
         isLoading : false,
         Dataset:Prove
+    });
+}
+//Cargar los detalles
+CargarDetalles= async (param= "") =>{
+    const Detalle = await this.DetalleCompra.Get(param);
+    this.setState({
+        isLoading : false,
+        Dataset:Detalle
     });
 }
 
@@ -40,7 +49,9 @@ render (){
               {this.state.isLoading ?
               <ActivityIndicator/>:
               this.state.Dataset.map(provee =>
-              <CardComponentPro data={provee}/>              
+              <CardComponentPro data={provee}
+              CargarDetalles={this.CargarDetalles}/> 
+                       
               )}     
         </ScrollView>)
 }

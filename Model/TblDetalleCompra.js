@@ -1,4 +1,6 @@
-class TblDetalleCompra{
+import { Entity } from "./Entity";
+
+class TblDetalleCompra extends Entity{
     constructor (props)
         {
             super();
