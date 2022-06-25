@@ -19,7 +19,7 @@ class TblProveedor extends Entity{
     cedula ="";
     direccion = "";
     
-//  TblProveedor = {
+// TblProveedor = {
 //      val: [],
 //       get: async()=>{
 //          if(this.idProveedor!=""){
