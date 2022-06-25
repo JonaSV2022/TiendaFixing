@@ -7,7 +7,7 @@ class FrmProducto extends React.Component {
 		this.props = props;
         this.ProductoBlock= new TblProducto();
 		this.state = {
-			//Bloques: []
+		
 		}
         //Mi variable para cargar es Problock = Bloque
 		this.CargarProductos = this.props.route.params.CargarProductos;
