@@ -19,20 +19,20 @@ class TblProveedor extends Entity{
     cedula ="";
     direccion = "";
     
- TblProveedor = {
-     val: this,
-      get: async()=>{
-         if(this.idProveedor!=""){
-            const Bloques = new TblProveedor();
-            return await Bloques.GetByProps("idProveedor", this.idProveedor);
-         }else{
-             return this.TblProveedor.val
-         }
+//  TblProveedor = {
+//      val: [],
+//       get: async()=>{
+//          if(this.idProveedor!=""){
+//             const Bloques = new TblProveedor();
+//             return await Bloques.GetByProps("idProveedor", this.idProveedor);
+//          }else{
+//              return this.TblProveedor.val
+//          }
            
-        },
-        set:(newValue)=>{
-            this.val = newValue;
-        }
-    }
+//         },
+//         set:(newValue)=>{
+//             this.val = newValue;
+//         }
+//     }
 }
 export {TblProveedor}

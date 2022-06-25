@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View ,Button, TextInput} from 'react-native';
+import { StyleSheet, Text, View ,Button,ScrollView, TextInput} from 'react-native';
 
 const MenuPrincipalView = (props) =>{
     return (
-        <View>     
+        <ScrollView>     
         <Text style={styles.Title}>TIENDA FIXING</Text>
                  {/* Botones de navegación */}
         <View  style={styles.Conteiner}>
@@ -16,7 +16,7 @@ const MenuPrincipalView = (props) =>{
        <Button title="Salir" color={"#8a5353"}onPress={()=>{
                 props.navigation.navigate('LoginView');}}/>   
         </View>
-        </View>);
+        </ScrollView>);
 
     }
 

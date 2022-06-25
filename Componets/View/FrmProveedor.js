@@ -7,7 +7,7 @@ class FrmProveedor extends React.Component {
 		this.props = props;
         this.Problock= new TblProveedor();
 		this.state = {
-			Bloques: []
+			//Bloques: []
 		}
         //Mi variable para cargar es Problock = Bloque
 		this.CargarProveedor = this.props.route.params.CargarProveedor;

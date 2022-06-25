@@ -23,21 +23,21 @@ class TblcompraProductos extends Entity{
         Subtotal = "";
         estado= "";
 
-    TblcompraProductos = {
-        val: this,
-         get: async()=>{
-            if(this.idCompraProducto !=""){
-               const ComBloques = new TblcompraProductos();
-               return await ComBloques.GetByProps("idCompraProducto ", this.idCompraProducto );
-            }else{
-                return this.TblcompraProductos.val
-            }
+    // TblcompraProductos = {
+    //     val: this,
+    //      get: async()=>{
+    //         if(this.idCompraProducto !=""){
+    //            const ComBloques = new TblcompraProductos();
+    //            return await ComBloques.GetByProps("idCompraProducto ", this.idCompraProducto );
+    //         }else{
+    //             return this.TblcompraProductos.val
+    //         }
               
-           },
-           set:(newValue)=>{
-               this.val = newValue;
-           }
-       }
+    //        },
+    //        set:(newValue)=>{
+    //            this.val = newValue;
+    //        }
+    //    }
        
 }
 export {TblcompraProductos}
