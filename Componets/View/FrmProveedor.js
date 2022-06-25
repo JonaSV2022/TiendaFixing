@@ -15,7 +15,7 @@ class FrmProveedor extends React.Component {
 
 
 	GuardarProveedor = async()=>{
-		await this.Problock.Save("IdProveedor");
+		await this.Problock.Save("idProveedor");
 		this.CargarProveedor();
 	}
 
@@ -56,9 +56,9 @@ class FrmProveedor extends React.Component {
                 <Button title="Guardar" onPress={ async ()=>{
                 //await this.props.route.params.GuardarProveedor(this.Problock);
 				await this.GuardarProveedor();
-				this.props.navigation.navigate("ProveedorView");
+				this.props.navigation.navigate("MenuPrincipalView");
 				}}/>     
-                <Button title="Cancelar" onPress={()=>{
+                <Button title="Cancelar"onPress={()=>{
 					 this.props.navigation.navigate("ProveedorView");
 				}}/>             
 			</ScrollView>	

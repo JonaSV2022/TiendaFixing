@@ -14,7 +14,7 @@ class FrmCompra extends React.Component {
 	}
 
 	GuardarCompras = async()=>{
-		await this.CompraBlock.Save("IdCompraProducto");
+		await this.CompraBlock.Save("idCompraProducto");
 		this.CargarCompras();
 	}
 	render() {
@@ -54,7 +54,7 @@ class FrmCompra extends React.Component {
                 {/* Opciones */}
 				<Button title="Guardar" onPress={ async ()=>{
 				await this.GuardarCompras();
-				this.props.navigation.navigate("CompraView");
+				this.props.navigation.navigate("MenuPrincipalView");
 				}}/>     
                 <Button title="Cancelar" onPress={()=>{
 					 this.props.navigation.navigate("CompraView");

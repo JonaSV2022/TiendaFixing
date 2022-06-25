@@ -3,6 +3,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import {ProveedorView} from "../View/ProveedorView"
 import { CompraView } from './CompraView';
 import {PrincipalView} from "../View/PrincipalView";
+import { ProductoView } from './ProductoView';
 
 const Tab = createBottomTabNavigator ();
 const MainView =( Props) =>{
@@ -16,6 +17,7 @@ const MainView =( Props) =>{
 
   <Tab.Screen name = "Menú Principal" component = {PrincipalView} />
   <Tab.Screen name = "Menú de Proveedores" component = {ProveedorView} />
+  <Tab.Screen name = "Menú de Productos" component = {ProductoView} />
   <Tab.Screen name = "Menú de Compra" component = {CompraView} />
 </Tab.Navigator>
   );

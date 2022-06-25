@@ -26,7 +26,7 @@ render (){
     return(<ScrollView>
 
         <Text style={{
-		  fontSize: 26, fontWeight:600}}>Sección De Deatlles-Compras</Text>
+		  fontSize: 26, fontWeight:600}}>Sección De Detalles Compras</Text>
  
               {this.state.isLoading ?
               <ActivityIndicator/>:

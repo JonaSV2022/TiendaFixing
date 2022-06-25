@@ -1,0 +1,20 @@
+[
+{
+    "idProducto": "1",
+    "nombreProducto": "Samsung A20",
+    "marca":"Samsung",
+    "categoria":"Celular inteligente"
+},
+{
+    "idProducto": "2",
+    "nombreProducto": "Auriculares Celebrat",
+    "marca":"Celebrant",
+    "categoria":"Accesorios"  
+},
+{
+    "idProducto": "3",
+    "nombreProducto": "Audífonos Samsung Galaxy Buds Live",
+    "marca":"Samsung",
+    "categoria":"Accesorios"  
+}
+]
