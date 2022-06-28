@@ -12,9 +12,9 @@ class TblDetalleCompra extends Entity{
         ApiMethods = {
             Get:"TblDetalleCompra",
         }
-        idDetalleCompra = "1";
-        idCompraProducto = "1";
-        idProducto  = "1";
+        idDetalleCompra = "";
+        idCompraProducto = "";
+        idProducto  = "";
 
 
         TblProducto= {
@@ -34,3 +34,4 @@ class TblDetalleCompra extends Entity{
         }
     }
 export {TblDetalleCompra}
+
