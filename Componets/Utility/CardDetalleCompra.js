@@ -8,7 +8,7 @@ const CardDetalleCompra = (props) =>{
          <Text style ={style.Title}>Detalles-Compra</Text>
          <Text style ={style.Atribute}> idDetalleCompra  : {props.data. idDetalleCompra }</Text>
          <Text style ={style.Atribute}> idCompraProducto: {props.data. idCompraProducto}</Text>
-         <Text style ={style.Atribute}> idProductos: {props.data.idProductos}</Text>
+         <Text style ={style.Atribute}> idProducto: {props.data.idProducto}</Text>
        
         </View>); 
 
