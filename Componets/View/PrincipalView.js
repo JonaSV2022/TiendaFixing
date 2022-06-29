@@ -10,6 +10,8 @@ import { MenuPrincipalView } from './MenuPrincipalView';
 import { DetalleCompraView } from './DetalleCompraView';
 import { ProductoView } from './ProductoView';
 import { FrmProducto } from './FrmProducto';
+import { ProductoSeleccion } from './ProductoSeleccion';
+import { FrmDetalle } from './FrmDetalle';
 
 //Aquí cargan todas las vista de nuestro proyecto
 //El primer stackview, es la vista principal del proyecto
@@ -27,6 +29,8 @@ export function PrincipalView() {
 <Stack.Screen name = "FrmCompra" component = {FrmCompra}/>
 <Stack.Screen name = "FrmProducto" component = {FrmProducto}/>
 <Stack.Screen name = "DetalleCompraView" component = {DetalleCompraView}/>
+<Stack.Screen name = "ProductoSeleccion" component = {ProductoSeleccion}/>
+<Stack.Screen name = "FrmDetalle" component = {FrmDetalle}/>
 </Stack.Navigator>
   );
 }

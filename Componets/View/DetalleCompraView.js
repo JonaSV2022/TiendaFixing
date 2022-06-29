@@ -27,6 +27,10 @@ render (){
 
         <Text style={{
 		  fontSize: 26, fontWeight:600}}>Sección De Detalles Compras</Text>
+          <Button title="Añadir Nuevo detalle" color={"#45aaad"} onPress={() => {
+                  	 this.props.navigation.navigate("FrmDetalle",{
+                        CargarDetalles:this.CargarDetalles});
+                      }}/> 
  
               {this.state.isLoading ?
               <ActivityIndicator/>:

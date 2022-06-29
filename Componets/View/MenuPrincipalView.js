@@ -15,6 +15,9 @@ const MenuPrincipalView = (props) =>{
         <Text style ={styles.Espacio}></Text>
        <Button title="Menú de Productos" color={"#45aaad"}onPress={()=>{
                 props.navigation.navigate('ProductoView');}}/> 
+    <Text style ={styles.Espacio}></Text>
+        <Button title="Menú de Detalles compra" color={"#45aaad"}onPress={()=>{
+                props.navigation.navigate("DetalleCompraView");}}/> 
         <Text style ={styles.Espacio}></Text>
        <Button title="Salir" color={"#8a5353"}onPress={()=>{
                 props.navigation.navigate('LoginView');}}/>   
