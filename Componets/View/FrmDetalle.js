@@ -13,6 +13,7 @@ class FrmDetalle extends React.Component {
 		}
 		this.CargarDetalles = this.props.route.params.CargarDetalles;
 		this.GuardarProducto = this.props.route.params.GuardarProducto;
+		this.GuardarCompra = this.props.route.params.GuardarCompra;
 	}
 
 	GuardarDetalles = async()=>{
@@ -21,28 +22,41 @@ class FrmDetalle extends React.Component {
 	}
 
 //Este método lo que hace es traer el IDProducto.
-NuevoProducto = async (idProducto) => {
+     NuevoProducto = async (idProducto) => {
 	this.setState({
 		idProducto:idProducto
 	})
 	this.DetalleBlock.idProducto = idProducto.toString();
 	}
 
+	CompraNueva = async (idCompraProducto) => {
+		this.setState({
+			idCompraProducto:idCompraProducto
+		})
+		this.DetalleBlock.idCompraProducto = idCompraProducto.toString();
+		}
 
 	render() {
 		return <ScrollView style={{padding:10 }}>
 				<Text style={styles.Title}>Datos de la nueva Compra</Text>
                 {/* FORMULARIO */}
 
-                <TextInput style={styles.InputStyle}
+                {/* <TextInput style={styles.InputStyle}
 					placeholder="ID COMPRA PRODUCTO"
-					onChangeText={val =>  this.DetalleBlock.idCompraProducto = val} ></TextInput> 
+					onChangeText={val =>  this.DetalleBlock.idCompraProducto = val} ></TextInput>  */}
 				
 			{/* ESTE MUESTRA EL ID del producto seleccionado*/}
 				<TextInput
 				style={styles.InputStyle}
 				placeholder="idProducto"
 				value={this.state.idProducto}
+				disabled
+				/>
+
+               <TextInput
+				style={styles.InputStyle}
+				placeholder="idCompraProducto"
+				value={this.state.idCompraProducto}
 				disabled
 				/>
 	
@@ -53,8 +67,13 @@ NuevoProducto = async (idProducto) => {
 			this.props.navigation.navigate("ProductoSeleccion",{
 			NuevoProducto:this.NuevoProducto,
 				})
-			}
-			/>
+			}/>
+			
+			<Button title="Seleccionar Compra +" onPress={()=>
+			this.props.navigation.navigate("CompraSeleccion",{
+			CompraNueva:this.CompraNueva,
+				})
+			} />
 		
 			<Button title="Guardar" onPress={ async ()=>{
 				await this.GuardarDetalles();
