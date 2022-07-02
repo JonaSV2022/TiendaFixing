@@ -2,21 +2,21 @@ import { StyleSheet, Text, View , Button} from 'react-native';
 import React from 'react';
 
 
-const CardProductoSeleccion = (props) =>{
+const CardProveedorSeleccion = (props) =>{
     return (
         <View style={style.CardStyle}>
          
-         <Text style ={style.Title}>Producto</Text>
-         <Text style ={style.Atribute}> idProducto: {props.data.idProducto}</Text>
-         <Text style ={style.Atribute}> Nombre Producto: {props.data.nombreProducto}</Text> 
-         <Button title="SELECCIONAR ESTE PRODUCTO" onPress={() => { 
-            props.ProductoSeleccionado ? props.SelectProducto(props.data.idProducto,props.data.nombreProducto):false
+         <Text style ={style.Title}>Proveedor</Text>
+         <Text style ={style.Atribute}> id Proveedor: {props.data.idProveedor}</Text>
+         <Text style ={style.Atribute}> Nombre del proveedor: {props.data.nombreProveedor}</Text>
+         <Button title="SELECCIONAR ESTE PROVEEDOR" onPress={() => { 
+            props.ProveedorSeleccionado ? props.SelectProveedor(props.data.idProveedor,props.data.nombreProveedor):false
         }}/>
-
+    
         </View>); 
 
     }
-    export {CardProductoSeleccion}
+    export {CardProveedorSeleccion}
     
 const style = StyleSheet.create({
     CardStyle:{

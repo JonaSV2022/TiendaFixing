@@ -15,9 +15,6 @@ const MenuPrincipalView = (props) =>{
         <Text style ={styles.Espacio}></Text>
        <Button title="Menú de Productos" color={"#45aaad"}onPress={()=>{
                 props.navigation.navigate('ProductoView');}}/> 
-    <Text style ={styles.Espacio}></Text>
-        <Button title="Menú de Detalles compra" color={"#45aaad"}onPress={()=>{
-                props.navigation.navigate("DetalleCompraView");}}/> 
         <Text style ={styles.Espacio}></Text>
        <Button title="Salir" color={"#8a5353"}onPress={()=>{
                 props.navigation.navigate('LoginView');}}/>   
@@ -29,8 +26,7 @@ const MenuPrincipalView = (props) =>{
     export {MenuPrincipalView}
     const styles = StyleSheet.create({
         Conteiner:{
-            flex:1,
-            backgroundColor: "#f2f2f2",
+            flex:1,  
             padding:20,
         },Title:{
             color:"#000",
@@ -38,14 +34,14 @@ const MenuPrincipalView = (props) =>{
             marginBottom: 50,
             fontSize: 55,
             justifyContent:'center',
-            marginLeft:50,
+            marginLeft:90,
             fontWeight: "bold",
             //zona del efecto de sombra
             textShadowColor: '#034AA6',
             textShadowOffset: { width: 2, height: 2 }, 
             textShadowRadius:3     
         },BienvenidaTexto:{
-            marginLeft:97,
+            marginLeft:120,
             marginBottom:30,
             justifyContent:'center',
             fontWeight: "bold",

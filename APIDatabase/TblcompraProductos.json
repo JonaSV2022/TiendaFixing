@@ -3,6 +3,8 @@
     {
        "idCompraProducto":"1",
        "idProveedor":"1",
+       "idProducto": "1",
+       "nombreProveedor":"CompuTech",
        "cantidadProducto":"18",
        "nombreProducto":"Auriculares Celebrat",
        "NoFactura":"12",
@@ -17,6 +19,8 @@
     {
         "idCompraProducto":"2",
         "idProveedor":"2",
+        "idProducto": "2",
+        "nombreProveedor":"Tienda Móvil",
         "cantidadProducto":"8",
         "nombreProducto":"Auriculares Celebrat",
         "NoFactura":"18",
@@ -29,8 +33,10 @@
     },
 
     {
-        "idCompraProducto":"3",
+       "idCompraProducto":"3",
        "idProveedor":"3",
+       "idProducto": "3",
+       "nombreProveedor":"Samsung",
        "cantidadProducto":"20",
        "nombreProducto":"Protector Glass",
        "NoFactura":"6",

@@ -14,6 +14,8 @@ class TblcompraProductos extends Entity{
 
         idCompraProducto ="";
         idProveedor ="";
+        idProducto = ""; //Agregado
+        nombreProveedor = ""; //Agregado
         cantidadProducto = "";
         nombreProducto = "";
         NoFactura = ""

@@ -24,18 +24,3 @@ const MainView =( Props) =>{
 }
 
 export {MainView}
-const style = StyleSheet.create({
-    Conteiner:{
-        flex:1,
-        backgroundColor: '#999',
-        padding:20
-      },Title:{
-          flex:1,
-          color:"#ffffff",
-          fontSize: 26,
-          justifyContent:"center"
-      },OptionConteiner: {
-          flex: 3
-      }
-
-    });

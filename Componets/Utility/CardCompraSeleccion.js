@@ -11,10 +11,10 @@ const CardCompraSeleccion = (props) =>{
          <Text style ={style.Atribute}> NoFactura: {props.data.NoFactura}</Text> 
         
 
-        <Button title="SELECCIONAR ESTA COMPRA" onPress={() => { 
+        {/* <Button title="SELECCIONAR ESTA COMPRA" onPress={() => { 
             props.CompraSeleccionado ? props.CompraNueva(props.data.idCompraProducto):false
             
-        }}/>
+        }}/> */}
     
         </View>); 
 

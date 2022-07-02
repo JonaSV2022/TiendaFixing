@@ -37,7 +37,7 @@ render (){
         <Text style={{
 		  fontSize: 26, fontWeight:600}}>Sección de Proveedores</Text>
              <TextInput style={{ padding: 10, margin: 10 }}
-					placeholder="Buscar nombre de proveedor"
+					placeholder="Buscar proveedor"
 					onChangeText={(val) => this.CargarProveedor(val)} ></TextInput>
                        
                     {/* //Posicion del Boton para mandar añadir Datos// */}

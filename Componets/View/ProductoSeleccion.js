@@ -19,9 +19,9 @@ constructor(props) {
 }
 
 // addproducto
-NuevoProducto = async(idProducto)=>{
-    this.props.route.params.NuevoProducto(idProducto)
-    this.props.navigation.navigate("FrmDetalle")
+SelectProducto = async(idProducto,nombreProducto)=>{
+    this.props.route.params.SelectProducto(idProducto,nombreProducto)
+    this.props.navigation.navigate("FrmCompra")
 }
 
 CargarProductos= async (param= "") =>{
@@ -51,7 +51,7 @@ render (){
               this.state.Dataset.map(vProducto=>
               <CardProductoSeleccion key={vProducto.idProducto}
                 data={vProducto}
-                NuevoProducto={this.NuevoProducto}
+                SelectProducto={this.SelectProducto}
                 ProductoSeleccionado={this.state.ProductoSeleccionado}
                 />
               )}
