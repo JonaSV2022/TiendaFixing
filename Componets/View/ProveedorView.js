@@ -37,11 +37,15 @@ render (){
         <Text style={{
 		  fontSize: 26, fontWeight:600}}>Sección de Proveedores</Text>
              <TextInput style={{ padding: 10, margin: 10 }}
-					placeholder="Buscar proveedor"
+					placeholder="🔍Buscar proveedor"
 					onChangeText={(val) => this.CargarProveedor(val)} ></TextInput>
-                       
+
+                <Button color={"#053F80"} title="⬅ Regresar" onPress={()=>{
+					 this.props.navigation.navigate("MenuPrincipalView");
+				}}/>  
+                      
                     {/* //Posicion del Boton para mandar añadir Datos// */}
-                     <Button title="Añadir nuevo Proveedor" color={"#14A839"} onPress={() => {
+                     <Button title="Añadir nuevo Proveedor +" color={"#05803a"} onPress={() => {
                   	 this.props.navigation.navigate("FrmProveedor",{
                         CargarProveedor:this.CargarProveedor});
                       }}/> 

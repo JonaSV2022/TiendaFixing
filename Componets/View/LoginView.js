@@ -6,10 +6,10 @@ const LoginView = (props) =>{
         <Text style={styles.Title}>TIENDA FIXING</Text>
          <View style={styles.ContenedorDelBoton}>
          <TextInput style={styles.CajasDeTexto}
-					placeholder="Ingrese su usuario"></TextInput>
+					placeholder="📄Ingrese su usuario"></TextInput>
 
             {/* Modificar estilo del botón de acceso */}
-        <Button title="Acceder" Class="Boton"color={"#8a5353"} onPress={() => {
+        <Button title="Acceder ➡" Class="Boton"color={"#05803a"} onPress={() => {
              props.navigation.navigate('MainView');
           }}/>  
              </View> 

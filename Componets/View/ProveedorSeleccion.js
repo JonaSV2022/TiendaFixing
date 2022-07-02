@@ -38,10 +38,10 @@ render (){
          <Text style={{
 		  fontSize: 26, fontWeight:600}}>Sección de Productos</Text>
              <TextInput style={{ padding: 10, margin: 10 }}
-					placeholder="Buscar proveedor"
+					placeholder="🔍Buscar proveedor"
 					onChangeText={(val) => this.CargarCompras(val)} ></TextInput>
 
-            <Button title="<- Regresar" onPress={()=>{
+            <Button color={"#053F80"} title="⬅ Regresar" onPress={()=>{
 					 this.props.navigation.navigate("FrmCompra");
 				}}/>  
 

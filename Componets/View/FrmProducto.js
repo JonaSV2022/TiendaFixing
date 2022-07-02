@@ -21,7 +21,7 @@ class FrmProducto extends React.Component {
 
 	render() {
 		return <ScrollView style={{padding:10}}>
-				<Text style={styles.Title}>Datos del nuevo Proveedor</Text>
+				<Text style={styles.Title}>Datos del nuevo Producto</Text>
                 {/* FORMULARIO */}
 
                 <TextInput style={styles.InputStyle}
@@ -35,11 +35,11 @@ class FrmProducto extends React.Component {
 					onChangeText={val =>  this.ProductoBlock.categoria = val} ></TextInput>  
 
                 {/* Opciones */}
-                <Button title="Guardar" onPress={ async ()=>{
+                <Button color={"#05803a"} title="Guardar ✔" onPress={ async ()=>{
 				await this.GuardarProductos();
 				this.props.navigation.navigate("MenuPrincipalView");
 				}}/>     
-                <Button title="Cancelar"onPress={()=>{
+                <Button color={"#053F80"} title="Cancelar ✖"onPress={()=>{
 					 this.props.navigation.navigate("ProductoView");
 				}}/>   
 

@@ -28,11 +28,15 @@ render (){
          <Text style={{
 		  fontSize: 26, fontWeight:600}}>Sección de Productos</Text>
              <TextInput style={{ padding: 10, margin: 10 }}
-					placeholder="Buscar Nombre del producto"
+					placeholder="🔍Buscar producto"
 					onChangeText={(val) => this.CargarProductos(val)} ></TextInput>
 
+            <Button color={"#053F80"} title="⬅ Regresar" onPress={()=>{
+					 this.props.navigation.navigate("MenuPrincipalView");
+				}}/>  
+
            {/* //Posicion del Boton para mandar añadir Datos// */}
-           <Button title="Añadir Nuevo producto" color={"#45aaad"} onPress={() => {
+           <Button title="Añadir Nuevo producto +" color={"#05803a"} onPress={() => {
                   	 this.props.navigation.navigate("FrmProducto",{
                         CargarProductos:this.CargarProductos});
                       }}/> 

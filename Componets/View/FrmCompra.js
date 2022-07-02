@@ -42,7 +42,7 @@ class FrmCompra extends React.Component {
 				<Text style={styles.Title}>Datos de la nueva Compra</Text>
                 {/* FORMULARIO */}
 
-				<Text>Selección del Proveedor</Text>
+				<Text style={styles.Textos}>🚚Selección del Proveedor</Text>
 
 				<TextInput
 				style={styles.InputStyle}
@@ -58,13 +58,15 @@ class FrmCompra extends React.Component {
 				disabled
 				/>
 
-		<Button title="Seleccionar Proveedor ->" onPress={()=>
+		<Button color={"#05803a"} title="Seleccionar Proveedor ➡" onPress={()=>
 			this.props.navigation.navigate("ProveedorSeleccion",{
 				SelectProveedor:this.SelectProveedor,
 				})
 			}/>
+			
+			<Text style ={styles.Espacio}></Text>
 
-			<Text>Selección del Producto</Text>
+			<Text style={styles.Textos}>📱Selección del Producto</Text>
 
 			<TextInput
 				style={styles.InputStyle}
@@ -80,14 +82,15 @@ class FrmCompra extends React.Component {
 				disabled
 				/>
 			
-		<Button title="Seleccionar Producto ->" onPress={()=>
+		<Button color={"#05803a"} title="Seleccionar Producto ➡" onPress={()=>
 			this.props.navigation.navigate("ProductoSeleccion",{
 				SelectProducto:this.SelectProducto,
 				})
 			}/>
 
+		<Text style ={styles.Espacio}></Text>
 
-			<Text>Detalle de la compra</Text>
+		<Text style={styles.Textos}>📝Detalle de la compra</Text>
 
 			<TextInput style={styles.InputStyle}
 					placeholder="Cantidad del producto"
@@ -111,11 +114,11 @@ class FrmCompra extends React.Component {
                  
 
                 {/* Opciones */}
-				<Button title="Guardar" onPress={ async ()=>{
+				<Button color={"#05803a"} title="Guardar ✔" onPress={ async ()=>{
 				await this.GuardarCompras();
 				this.props.navigation.navigate("MenuPrincipalView");
 				}}/>     
-                <Button title="Cancelar" onPress={()=>{
+                <Button color={"#053F80"} title="Cancelar ✖" onPress={()=>{
 					 this.props.navigation.navigate("CompraView");
 				}}/>             
 			</ScrollView>;
@@ -129,9 +132,18 @@ const styles = StyleSheet.create({
 	Title:{
 		  color:"#212529",
 		  fontSize: 26,
-		fontWeight:600
+		  fontWeight:600,
+		  marginBottom: 40,
 	  },
       InputStyle:{
         padding: 10, margin: 10, borderWidth:2, borderRadius:3
-      }
+      },
+	  Textos:{
+		MarginTop: 100,
+		fontSize: 20, 
+		fontWeight:600,
+	  },
+	  Espacio:{
+		marginTop: 25,
+	  }
 	});

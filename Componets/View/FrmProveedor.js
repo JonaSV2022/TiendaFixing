@@ -24,13 +24,22 @@ class FrmProveedor extends React.Component {
 				<Text style={styles.Title}>Datos del nuevo Proveedor</Text>
                 {/* FORMULARIO */}
 
+				<Text style={styles.Textos}>🙎‍♂️Información de la persona</Text>
+
                 <TextInput style={styles.InputStyle}
 					placeholder="Nombre del Proveedor"
 					onChangeText={val =>  this.Problock.nombreProveedor = val} ></TextInput>
 
 				<TextInput style={styles.InputStyle}
 					placeholder="Apellido del Proveedor"
-					onChangeText={val =>  this.Problock.apellidoProveedor = val} ></TextInput>  
+					onChangeText={val =>  this.Problock.apellidoProveedor = val} ></TextInput> 
+
+				<TextInput style={styles.InputStyle}
+					placeholder="Cédula"
+					onChangeText={val =>  this.Problock.cedula = val} ></TextInput>  
+
+		<Text style ={styles.Espacio}></Text>
+		<Text style={styles.Textos}>🏛Información de la empresa</Text>
                  
                 <TextInput style={styles.InputStyle}
 					placeholder="RUC"
@@ -44,21 +53,17 @@ class FrmProveedor extends React.Component {
 					placeholder="Nombre de la empresa"
 					onChangeText={val =>  this.Problock.nombreDeLaEmpresa = val} ></TextInput>  
 
-                <TextInput style={styles.InputStyle}
-					placeholder="Cédula"
-					onChangeText={val =>  this.Problock.cedula = val} ></TextInput> 
-
 				<TextInput style={styles.InputStyle}
 					placeholder="Dirección"
 					onChangeText={val =>  this.Problock.direccion = val} ></TextInput>   
 
                 {/* Opciones */}
-                <Button title="Guardar" onPress={ async ()=>{
+                <Button color={"#05803a"} title="Guardar ✔" onPress={ async ()=>{
                 //await this.props.route.params.GuardarProveedor(this.Problock);
 				await this.GuardarProveedor();
 				this.props.navigation.navigate("MenuPrincipalView");
 				}}/>     
-                <Button title="Cancelar"onPress={()=>{
+                <Button color={"#053F80"} title="Cancelar ✖"onPress={()=>{
 					 this.props.navigation.navigate("ProveedorView");
 				}}/>             
 			</ScrollView>	
@@ -74,5 +79,13 @@ const styles = StyleSheet.create({
 	  },
       InputStyle:{
         padding: 10, margin: 10, borderWidth:2, borderRadius:3
-      }
+      },
+	  Textos:{
+		MarginTop: 100,
+		fontSize: 20, 
+		fontWeight:600,
+	  },
+	  Espacio:{
+		marginTop: 25,
+	  }
 	});
