@@ -8,7 +8,7 @@ class FrmCompra extends React.Component {
         this.CompraBlock= new TblcompraProductos();
         // Mi variable para cargar es: "CompraBlock"
 		this.state = {
-			ComBloques: []
+			//ComBloques: []
 		}
 		this.CargarCompras = this.props.route.params.CargarCompras;
 
@@ -28,6 +28,8 @@ class FrmCompra extends React.Component {
 		this.CompraBlock.nombreProveedor=nombreProveedor.toString();
 	}
 
+	//Esto iguala la propiedad del idproducto de compra con el idproducto de la tabla producto
+	//Es decir, verifica si ambos campos son iguales y luego los guarda.
 	SelectProducto = async (idProducto,nombreProducto) => {
 		this.setState({
 			idProducto:idProducto,
@@ -44,6 +46,7 @@ class FrmCompra extends React.Component {
 
 				<Text style={styles.Textos}>🚚Selección del Proveedor</Text>
 
+				 {/* ESTOS INPUT LO QUE HACEN ES REFLEJAR EL VALOR DE LA OTRA VISTA */}
 				<TextInput
 				style={styles.InputStyle}
 				placeholder="Selecciona un proveedor para ver su ID aquí"

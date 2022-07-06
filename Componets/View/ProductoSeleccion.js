@@ -18,7 +18,7 @@ constructor(props) {
     
 }
 
-// addproducto
+// addproducto - Se encarga de seleccionar esos valores que están declarado en el async, lo manda al card y  luego al formulario
 SelectProducto = async(idProducto,nombreProducto)=>{
     this.props.route.params.SelectProducto(idProducto,nombreProducto)
     this.props.navigation.navigate("FrmCompra")
